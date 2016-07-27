@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFs-fr-cRx">
+                                <rect key="frame" x="71" y="226" width="178" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.90531427190000002" blue="0.82885470900000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="删除"/>
+                                <connections>
+                                    <action selector="DeletBlick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9eV-Ua-Dyf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wct-Ab-oM2">
+                                <rect key="frame" x="71" y="299" width="178" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.90531427190000002" blue="0.82885470900000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="更新"/>
+                                <connections>
+                                    <action selector="UpdataBlick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uee-gi-PSu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uyK-4b-Bnq">
+                                <rect key="frame" x="71" y="372" width="178" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.90531427190000002" blue="0.82885470900000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="查找"/>
+                                <connections>
+                                    <action selector="seleBlick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0ll-En-7K6"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="tag" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7wI-wl-bSz">
+                                <rect key="frame" x="20" y="28" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="lDO-FW-1iS"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gBj-eP-J8k">
+                                <rect key="frame" x="20" y="66" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="D4f-Ta-iDM"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="year" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bIy-3e-tZs">
+                                <rect key="frame" x="20" y="104" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="hYf-eE-cVW"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8VQ-04-Chh">
+                                <rect key="frame" x="71" y="153" width="178" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.90531427190000002" blue="0.82885470900000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="添加"/>
+                                <connections>
+                                    <action selector="InserBlick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KSp-VV-Mqq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uyK-4b-Bnq" firstAttribute="centerX" secondItem="Wct-Ab-oM2" secondAttribute="centerX" id="1KD-NB-brt"/>
+                            <constraint firstItem="dFs-fr-cRx" firstAttribute="width" secondItem="8VQ-04-Chh" secondAttribute="width" id="2cc-Ju-ZsY"/>
+                            <constraint firstItem="8VQ-04-Chh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4zL-OX-nCj"/>
+                            <constraint firstItem="8VQ-04-Chh" firstAttribute="top" secondItem="bIy-3e-tZs" secondAttribute="bottom" constant="19" id="5Bw-rT-Y8A"/>
+                            <constraint firstItem="dFs-fr-cRx" firstAttribute="centerX" secondItem="8VQ-04-Chh" secondAttribute="centerX" id="7Jc-8g-b4K"/>
+                            <constraint firstItem="uyK-4b-Bnq" firstAttribute="height" secondItem="Wct-Ab-oM2" secondAttribute="height" id="CSs-fW-7es"/>
+                            <constraint firstItem="Wct-Ab-oM2" firstAttribute="width" secondItem="dFs-fr-cRx" secondAttribute="width" id="DSt-eS-0tP"/>
+                            <constraint firstItem="gBj-eP-J8k" firstAttribute="top" secondItem="7wI-wl-bSz" secondAttribute="bottom" constant="8" id="Eyf-FY-jeX"/>
+                            <constraint firstItem="7wI-wl-bSz" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" constant="-40" id="JZN-Vc-qrA"/>
+                            <constraint firstItem="7wI-wl-bSz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Olr-1i-U0i"/>
+                            <constraint firstItem="gBj-eP-J8k" firstAttribute="width" secondItem="7wI-wl-bSz" secondAttribute="width" id="RCh-bX-YL2"/>
+                            <constraint firstItem="Wct-Ab-oM2" firstAttribute="top" secondItem="dFs-fr-cRx" secondAttribute="bottom" constant="23" id="UCR-uS-yCJ"/>
+                            <constraint firstItem="Wct-Ab-oM2" firstAttribute="height" secondItem="dFs-fr-cRx" secondAttribute="height" id="aQ6-AP-lsr"/>
+                            <constraint firstItem="dFs-fr-cRx" firstAttribute="height" secondItem="8VQ-04-Chh" secondAttribute="height" id="bZE-Wd-eP1"/>
+                            <constraint firstItem="Wct-Ab-oM2" firstAttribute="centerX" secondItem="dFs-fr-cRx" secondAttribute="centerX" id="fz7-WN-OEY"/>
+                            <constraint firstItem="uyK-4b-Bnq" firstAttribute="width" secondItem="Wct-Ab-oM2" secondAttribute="width" id="g3m-Ax-c23"/>
+                            <constraint firstItem="8VQ-04-Chh" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" constant="-518" id="k4I-08-3u6"/>
+                            <constraint firstItem="bIy-3e-tZs" firstAttribute="width" secondItem="gBj-eP-J8k" secondAttribute="width" id="mFm-DT-eUL"/>
+                            <constraint firstItem="gBj-eP-J8k" firstAttribute="centerX" secondItem="7wI-wl-bSz" secondAttribute="centerX" id="mn1-EE-zn6"/>
+                            <constraint firstItem="7wI-wl-bSz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-241" id="onp-Gv-cC3"/>
+                            <constraint firstItem="bIy-3e-tZs" firstAttribute="centerX" secondItem="gBj-eP-J8k" secondAttribute="centerX" id="qei-vE-mgA"/>
+                            <constraint firstItem="8VQ-04-Chh" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" constant="-142" id="t81-9L-XkN"/>
+                            <constraint firstItem="bIy-3e-tZs" firstAttribute="top" secondItem="gBj-eP-J8k" secondAttribute="bottom" constant="8" id="tnN-n8-y58"/>
+                            <constraint firstItem="dFs-fr-cRx" firstAttribute="top" secondItem="8VQ-04-Chh" secondAttribute="bottom" constant="23" id="xGl-pi-Iid"/>
+                            <constraint firstItem="uyK-4b-Bnq" firstAttribute="top" secondItem="Wct-Ab-oM2" secondAttribute="bottom" constant="23" id="yOs-zF-Ies"/>
+                            <constraint firstItem="7wI-wl-bSz" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" constant="-538" id="zTz-fS-6UW"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="nameTf" destination="gBj-eP-J8k" id="ynS-dc-JRs"/>
+                        <outlet property="tagTf" destination="7wI-wl-bSz" id="R29-kx-5GL"/>
+                        <outlet property="yearTf" destination="bIy-3e-tZs" id="0Sy-Vs-2yf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="280" y="246"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "152933FFE6A2EC22F7E52B5D8DDB46605B137141",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "152933FFE6A2EC22F7E52B5D8DDB46605B137141" : 0,
+    "67EE43C490F76A93026640E9B23CEAC56A06B717" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A33F1A11-A939-4F81-B464-E3B721D1139D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "152933FFE6A2EC22F7E52B5D8DDB46605B137141" : "CyhDB\/",
+    "67EE43C490F76A93026640E9B23CEAC56A06B717" : "CyhDB\/CyhDB\/CyhDB\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "CyhDB",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "CyhDB.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/CYHAI9\/CyhDB.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "152933FFE6A2EC22F7E52B5D8DDB46605B137141"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/CYHAI9\/CyhDB.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "67EE43C490F76A93026640E9B23CEAC56A06B717"
+    }
+  ]
+}
