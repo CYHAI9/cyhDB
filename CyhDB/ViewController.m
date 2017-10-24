@@ -20,10 +20,11 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
+    [super viewDidLoad];
     
-    [[CyhbaeseDB shareBaseDB] createDB:@"/Users/Macx/Desktop/mytest.db"];
+    NSString * dbPath = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/countdb.sqlite"];
+    [[CyhbaeseDB shareBaseDB] createDB:dbPath];
     [[CyhbaeseDB shareBaseDB]createTable:@"CREATE TABLE IF NOT EXISTS Mytesttable (id INTEGER PRIMARY KEY,tag text, name text, year text);"];
-    
 }
 
 - (IBAction)InserBlick:(UIButton *)sender {
